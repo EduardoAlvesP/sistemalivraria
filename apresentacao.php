@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />  
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/> 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Dados Cadastrados2</title>
+    <title>Dados Cadastrados</title>
     
 </head>
 <body >
