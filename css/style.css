@@ -26,3 +26,9 @@ a{
 nav{
     padding: 10px;
 }
+main{
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+
+}
