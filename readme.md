@@ -9,5 +9,4 @@ Esse **projeto** foi feito para uma avaliação do ensino médio e constitui-se 
   - bootstrap
   - PHP
   - Mysql
-
-GitHub: *[EduardoAlvesP]*(https://github.com/EduardoAlvesP)
+GitHub: [EduardoAlvesP](https://github.com/EduardoAlvesP)
