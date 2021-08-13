@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,10 @@
     
 </head>
 <body >
-        <?php
-        require_once("php/inc/header.php");
-        ?>
-        <main>
+    <?php
+    require_once("php/inc/header.php");
+    ?>
+    <main>
         <form action="apresentacao.php" method="post" id="envio" name="envio" class="formul input-group input-group-sm rounded">
             <h1 class="display-5 rounded-top"> Dados Cadastrados </h1>
             
@@ -125,10 +126,8 @@
                     </tbody>
                 </table>
             </div>
-        </form>
-        
+        </form>      
     </main>
-
   <?php  require_once("php/controller/logout.php");?>
 </body>
 </html>

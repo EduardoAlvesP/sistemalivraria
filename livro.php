@@ -10,12 +10,10 @@
     
 </head>
 <body>
-
     <?php
         require_once("php/inc/header.php");
     ?>
-<main>
-    
+    <main>
         <form action="php/controller/inserir.php" method="post" id="envio" name="envio" class="input-group input-group-sm formul rounded">
             <h1 class="display-5 rounded-top"> Cadastro Livro </h1>
     
@@ -46,10 +44,8 @@
                 </div>
     
             <input type="hidden" id="aux" name="aux" value="1">
-        </form>
-    
-   
-</main> 
+        </form> 
+    </main> 
 </div>
 </body>
 </html>
