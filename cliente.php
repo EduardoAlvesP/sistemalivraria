@@ -10,42 +10,28 @@
     
 </head>
 <body >
-<?php
-require_once("php/inc/header.php");
-?>
-
-
-
-    <form action="php/controller/inserir.php" method="post" id="envio" name="envio" enctype="multipart/form-data" class="formul">
-        <h4 class="display-6"> Cadastro Cliente </h4>
-
-
-        <h4>Cliente</h4>
-        <div class="row">
-            <div class="col">
-                <label for="nome"> Nome: </label>
-                <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" required/>
+    <?php
+    require_once("php/inc/header.php");
+    ?>  
+    <main>
+        <form action="php/controller/inserir.php" method="post" id="envio" name="envio" enctype="multipart/form-data" class="input-group input-group-sm formul round">
+            <h1 class="display-5 round-top"> Cadastro Cliente </h1> 
+            <h2>Cliente</h2>
+            <div class="row">
+                <div class="col">
+                    <label for="nome"> Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" class="form-control" required/>
+                    <input type="submit" value="Enviar" class="btn btn-dark" onclick = ></button>
+                </div>
+    
+                <div class="col">
+                    <label for="livro_isbn"> ISBN </label>
+                    <input type="text" name="livro_isbn" id="livro_isbn" placeholder="ISBN" class="form-control" autofocus="" required/>
+                </div>
             </div>
-
-            <div class="col">
-                <label for="livro_isbn"> ISBN </label>
-                <input type="text" name="livro_isbn" id="livro_isbn" placeholder="ISBN" class="form-control" autofocus="" required/>
-            </div>
-        </div>
-        
-            
-        
-
-        
-        <input type="hidden" id="aux" name="aux" value="2">
-
-        
-
-        
-
-        
-        <input type="submit" value="Enviar" class="btn btn-dark" onclick = ></button>
-    </form>
+            <input type="hidden" id="aux" name="aux" value="2">
+        </form>
+</main>
 
 
    

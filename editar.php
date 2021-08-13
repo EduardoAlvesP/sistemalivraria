@@ -12,6 +12,7 @@
 <body>
 <?php
     require_once("php/inc/coneccao.php");
+    require_once("php/inc/header.php");
 
     $ISBN =  $_GET["ISBN"];
 
@@ -21,36 +22,38 @@
 
 ?>
 
-<form action="php/controller/update.php" method="post" id="envio" name="envio" class="formul">
-        <h4 class="display-6"> Editar Livro </h4>
-
-
-        <h4>Livro</h4>
-        <div class="row">
-            <div class="col">
-                <label for="isbn"> ISBN: </label>
-                <input type="text" name="isbn" id="isbn" placeholder="ISBN" class="form-control" value="<?php echo $ISBN; ?>" readonly/>
+<main>
+    <form action="php/controller/update.php" method="post" id="envio" name="envio" class="formul rounded input-group input-group-sm">
+            <h1 class="display-5 rounded-top"> Editar Livro </h1>
+    
+    
+            <h2>Livro</h2>
+            <div class="row">
+                <div class="col">
+                    <label for="isbn"> ISBN: </label>
+                    <input type="text" name="isbn" id="isbn" placeholder="ISBN" class="form-control" value="<?php echo $ISBN; ?>" readonly/>
+                </div>
+    
+                <div class="col">
+                    <label for="titulo"> Título: </label>
+                    <input type="text" name="titulo" id="titulo" placeholder="Título" class="form-control" value="<?php echo $lista['titulo']; ?>" autofocus="" />
+                </div>
             </div>
-
-            <div class="col">
-                <label for="titulo"> Título: </label>
-                <input type="text" name="titulo" id="titulo" placeholder="Título" class="form-control" value="<?php echo $lista['titulo']; ?>" autofocus="" />
+            <div class="row">
+                <div class="col">
+                    <label for="autor"> Autor: </label>
+                    <input type="text" name="autor" id="autor" placeholder="Autor" class="form-control" value="<?php echo $lista['autor']; ?>" />
+                    <input type="submit" value="Enviar" class="btn btn-dark"></button>
+                </div>
+    
+                <div class="col">
+                    <label for="categoria"> Categoria: </label>
+                    <input type="text" name="categoria" id="categoria" placeholder="Categoria" class="form-control" value="<?php echo $lista['categoria']; ?>" />
+                </div>
+    
+    
             </div>
-        </div>
-        <div class="row">
-            <div class="col">    
-                <label for="autor"> Autor: </label>
-                <input type="text" name="autor" id="autor" placeholder="Autor" class="form-control" value="<?php echo $lista['autor']; ?>" />
-            </div>
-
-            <div class="col">
-                <label for="categoria"> Categoria: </label>
-                <input type="text" name="categoria" id="categoria" placeholder="Categoria" class="form-control" value="<?php echo $lista['categoria']; ?>" />
-            </div>
-
-            
-        </div> 
-        <input type="submit" value="Enviar" class="btn btn-dark"></button>
-    </form>
+        </form>
+</main>
 </body>
 </html>

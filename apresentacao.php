@@ -11,19 +11,19 @@
     
 </head>
 <body >
-    <main>
         <?php
         require_once("php/inc/header.php");
         ?>
-        <form action="apresentacao.php" method="post" id="envio" name="envio" class="formul">
-            <h4 class="display-6"> Dados Cadastrados </h4>
-            <br> <br>
+        <main>
+        <form action="apresentacao.php" method="post" id="envio" name="envio" class="formul input-group input-group-sm rounded">
+            <h1 class="display-5 rounded-top"> Dados Cadastrados </h1>
+            
             <label>
-                <input type = "text" name="busca" placeholder="Pesquisar"/>
+                <input type = "text" name="busca" class="form-control-sm" placeholder="Pesquisar"/>
             </label>
-            <button type="submit" name="btn-pesquisar">Pesquisar</button>
+            <button type="submit" name="btn-pesquisar" class="btn btn-dark b">Pesquisar</button>
             <br><br>
-            <h4>Livro</h4>
+            <h2>Livro</h2>
             <div class = "table-scroll">
                 <table class="table">
                     <thead class="thead-dark">
@@ -78,8 +78,7 @@
                     </tbody>
                 </table>
             </div>
-            <br>
-            <h4> Cliente </h4>
+            <h2> Cliente </h2>
             <div class = "table-scroll">
                 <table class="table">
                     <thead class="thead-dark">
@@ -126,12 +125,6 @@
                     </tbody>
                 </table>
             </div>
-        
-        
-        
-        
-            <br> <br>
-        
         </form>
         
     </main>
