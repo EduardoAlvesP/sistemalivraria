@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost", "root", "030491pa", "livros");
+    $conn = mysqli_connect("localhost", "root", "Senha123", "livros");
 
     if (mysqli_connect_errno())
     {
