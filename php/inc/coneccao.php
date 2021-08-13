@@ -6,4 +6,5 @@
         printf('Falha na conexão: %s\n', mysqli_connect_error());
         exit(); // die();
     }
+    a
 ?>
